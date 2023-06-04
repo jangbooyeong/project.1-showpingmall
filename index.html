@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라임올리브</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./01.js"></script>
+
+</head>
+<body>
+  <div class="top__bg">
+    <top-menu class="top-menu">
+      <nav class="top__nav">
+        <ul>
+          <li class="top__nav-item">
+            <a href="#">로그인</a>
+          </li>
+          <li class="top__nav-item">
+            <a href="#">회원가입</a>
+          </li>
+          <li class="top__nav-item">
+            <a href="#">마이페이지</a>
+          </li>
+          <li class="top__nav-item">
+            <a href="#">장바구니</a>
+          </li>
+        </ul>
+      </nav>
+    </top-menu>
+  </div>
+
+  <div class="header__bg">
+    <header class="header">
+      <div class="header__left">
+        <input type="checkbox" class="header__menu-btn">
+        <a href="#" class="header__search">
+          <span class="sr-only">검색</span>
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li class="header__nav-item">카테고리</li>
+            <li class="header__nav-item">
+              <a href="#">식기/수저통/컵</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">보온보냉용품</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="header__nav-item">게시판</li>
+            <li class="header__nav-item">
+              <a href="#">로그인</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">회원가입</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">마이페이지</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">장바구니</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1>
+        <a href="#" class="header__homelink">
+          <img src="./images/logo.jpg" alt="홈으로" class="header__logo">
+        </a>
+      </h1>
+      <div class="header__right">
+        <a href="#" class="header__cart">
+          <span class="sr-only">CART</span>
+        </a>
+        <a href="#" class="header__my-page">
+          <span class="sr-only">my</span>
+        </a>
+      </div>
+    </header>
+  </div>
+  <button id="topButton" onclick="scrollToTop()">
+    <span class="sr-only">최상단으로가기</span>
+  </button>
+
+
+  <main>
+    <div class="inner">
+      <section class="intro">
+        <div class="slide slide-wrapper">
+          <div class="intro__slide item1">
+            <a href="#" onclick="return false">
+              <img src="./images/intro-images1.jpg" alt="상품대표이미지">
+            </a>
+          </div>   
+          <div class="intro__slide item2">
+            <a href="#" onclick="return false">
+              <img src="./images/intro-images2.jpg" alt="상품대표이미지">
+            </a>
+          </div>   
+          <div class="intro__slide item3">
+            <a href="#" onclick="return false">
+              <img src="./images/intro-images3.jpg" alt="상품대표이미지">
+            </a>
+          </div>   
+          <ul class="slide__button"></ul>
+        </div>
+      </section>
+      <section class="section">
+        <header class="section__header">
+          <h1 class="section__title">
+            추천 아이템
+          </h1>
+        </header>
+        <div class="item">
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images1.jpg" alt="" class="item__img">
+              </div>
+              <h2 class="item__title">
+                자수 레이스 테이블매트 6type
+              </h2>
+              <p class="item__text">
+                <del>3,500원</del>
+              </p>
+              <dl class="item__price">
+                <dt>29%</dt>
+                <dd>2,500원</dd>
+              </dl>
+            </a>
+          </div>
+          <!-- --------------------->
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images2.jpg" alt="" class="item__img">
+              </div>
+              <h2 class="item__title">
+                아모르 러블리 내열글라스 8type
+              </h2>
+              <p class="item__text">
+                <del>9,800원</del>
+              </p>
+              <dl class="item__price">
+                <dt>20%</dt>
+                <dd>7,800원</dd>
+              </dl>
+            </a>
+          </div>
+          <!-- --------------------->
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images3.jpg" alt="" class="item__img">
+              </div>
+              <h2 class="item__title">
+                라피네 2인 수저세트 스푼 젓가락 유/무광
+              </h2>
+              <p class="item__text">
+                <del>9,900원</del>
+              </p>
+              <dl class="item__price">
+                <dt>30%</dt>
+                <dd>6,900원</dd>
+              </dl>
+            </a>
+          </div>
+          <!-- --------------------->
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images4.jpg" alt="" class="item__img">
+              </div>
+              <h2 class="item__title">
+                트윈 서빙플레이트 (종지그릇) - 복사본
+              </h2>
+              <p class="item__text">
+                <del>5,900원</del>
+              </p>
+              <dl class="item__price">
+                <dt>17%</dt>
+                <dd>4,900원</dd>
+              </dl>
+            </a>
+          </div>
+          <!-- --------------------->
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images5.jpg" alt="" class="item__img">
+              </div>
+              <h2 class="item__title">
+                1+1+1+1+1 난리난 에코 그릴 플레이트 2종
+              </h2>
+              <p class="item__text">
+                <del>15,000원</del>
+              </p>
+              <dl class="item__price">
+                <dt>21%</dt>
+                <dd>11,900원</dd>
+              </dl>
+            </a>
+          </div>
+          <!-- --------------------->
+          <div class="item__card">
+            <a href="#" onclick="return false">
+              <div class="item__solid">
+                <img src="./images/item-images6.jpg" alt="" class="item__img">
+                <div class="item__sold"></div>
+                <span class="_sold">SOLD OUT</span>
+              </div>
+              <h2 class="item__title">
+                스윗 뮤티드 보온보냉병 350ml 스텐텀블러 어린이 학생 물병
+              </h2>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <header class="section__header">
+          <h1 class="section__title">
+            전체상품
+          </h1>
+        </header>
+        <div class="goods__wrap-pc">
+          <ul id="goods__roll"></ul>
+        </div>
+        <div class="goods__wrap-m">
+          <ul id="goods__roll-m"></ul>
+        </div>
+        <button id="goods__button">더보기</button>
+      </section>
+
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="cs">
+            <p>고객센터</p>
+            <strong>010-3259-2040</strong>
+          </li>
+          <li class="bank">
+            <p>무통장 계좌안내</p>
+            <span>국민은행 42750104063184 (예금주: 김현종)</span>
+          </li>
+          <li class="link">
+            <a href="#">이용약관</a>
+            <a href="#"><strong>개인정보처리방침</strong></a>
+          </li>
+        </ul>
+        <div class="addr">
+          <span>
+          <em>라임올리브</em>
+          </span>
+          <span>
+            대표자
+            <em>김현종</em>
+          </span>
+          <span>
+            이메일
+            <em>choco745@naver.com</em>
+          </span> 
+          <span>
+            사업자번호
+            <em>1283702409</em>
+          </span>
+          <span>
+            통신판매업신고번호
+            <em>도소매</em>
+          </span>
+          <span>
+            주소
+            <em>[10202] 경기 고양시 일산서구 송산로174번길 49 (구산동) 브랜드마켓코리아</em>
+          </span>
+          <span>
+            Copyright ⓒ 라임올리브. All Rights Reserved. Hosting by blogpay
+        </span>
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

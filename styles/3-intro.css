@@ -1,0 +1,98 @@
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 55px 0 25px 0;
+}
+
+
+@media (max-width: 768px) {
+  .intro {
+    margin: 0 0 25px 0;
+  }
+  .slide {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .intro__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    flex-shrink: 0;
+    transition: left 0.25s;
+  }
+
+  .intro__slide img {
+    -webkit-user-drag: none;
+    width: 100%;
+    height: 480px;
+  }
+  .intro__slide a {
+    -webkit-user-drag: none;
+  }
+}
+
+@media (min-width: 769px) {
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    /* 화면 숨기기 */
+    overflow: hidden;
+    position: relative;
+    
+    width: 100%;
+  }
+
+  .intro__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 버튼 클릭시 left offset 값을 적용시키키 위해 */
+    position: relative;
+    left: 0px;
+
+    width: 100%;
+
+    flex-shrink: 0;
+
+    transition: left 0.25s;
+  }
+
+  .intro__slide a {
+    -webkit-user-drag: none;
+  }
+
+  .intro__slide img {
+    -webkit-user-drag: none;
+  }
+
+  .slide__button {
+      display: flex;
+      gap: 8px;
+
+      position: absolute;
+      bottom: 8px;
+
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .slide__button > li {
+      color: #aaa;
+      cursor: pointer;
+      font-size: 30px;
+  }
+
+  .slide__button > li.active {
+      color: #222;
+  }
+}
